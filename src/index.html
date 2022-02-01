@@ -6,47 +6,12 @@ keywords: Cynthia Bascara, Speech Therapist, Marin County
 permalink: "/"
 ---
 
-<header class="panel" id="header">
-  <div class="container row">
-    <div class="brand">
-      <h1>Cynthia Bascara</h1>
-      <h2>Speech Therapy</h2>
-    </div>
-    <button id="nav-toggle" aria-label="open navigation" type="button"></button>
-    <label for="nav-toggle">
-      <span class="hamburger"></span>
-    </label>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li>
-          <a href="{{ site.baseurl }}/#myservices" class="nav__link"
-            >My services</a
-          >
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/#whereiwork" class="nav__link"
-            >Where I Work</a
-          >
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/#aboutme" class="nav__link">About Me</a>
-        </li>
-        <li>
-          <a
-            href="{{ site.baseurl }}/#arrangeconsultation"
-            class="nav__link consultation__link"
-            >Arrange a Consultation</a
-          >
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
 <div class="panel" id="challenges">
   <div class="container row">
     <div class="panel__head">
-      <h3 class="panel__title">Is your child challenged by any of these?</h3>
+      <h3 class="panel__title">
+        Is your child challenged<br />by any of these?
+      </h3>
       <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
     </div>
     <ul class="panel__list">
@@ -100,6 +65,7 @@ permalink: "/"
   <div class="container row">
     <div class="panel__head">
       <h3 class="panel__title">About Me</h3>
+      <!-- TODO: Add a photo here -->
       <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
     </div>
     <ul class="panel__list">
@@ -147,7 +113,7 @@ permalink: "/"
 
     <form
       id="contact"
-      name="Speech Therapy website inquiry"
+      name="Speech Therapy inquiry via website message"
       action="/form-success.html"
       method="POST"
       data-netlify="true"
@@ -157,39 +123,24 @@ permalink: "/"
       <h2>say more here. or above, and remove this text</h2>
       #}
       <fieldset>
-        <input
-          placeholder="Your name"
-          type="text"
-          name="name"
-          tabindex="1"
-          required
-          autofocus
-        />
-        <input class="other-form-field" name="bot-field" />
+        <input placeholder="Your name" type="text" name="name" required />
+        <input class="other-form-field" name="bot-field" type="text" />
       </fieldset>
       <fieldset>
         <input
           placeholder="Your email address"
           type="email"
           name="email"
-          tabindex="2"
           required
         />
       </fieldset>
       <fieldset>
-        <input
-          placeholder="Subject"
-          type="text"
-          name="subject"
-          tabindex="3"
-          required
-        />
+        <input placeholder="Subject" type="text" name="subject" required />
       </fieldset>
       <fieldset>
         <textarea
           placeholder="Type your message here...."
           name="message"
-          tabindex="4"
           required
         ></textarea>
       </fieldset>

@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   // Outer structure
 
   .container {
@@ -40,7 +40,7 @@
   }
 
   .panel__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1.5em;
   }
 
@@ -56,9 +56,11 @@
   p {
     font-size: 1.25rem;
   }
+
   footer p {
     font-size: 1rem;
   }
+
   .btn {
     width: fit-content;
     padding: 0.5em 0.75em;
@@ -67,6 +69,7 @@
     margin: 0 auto;
     background-color: var(--consultation-link-bg-color);
     display: block;
+    font-size: 1.2rem;
     text-align: center;
     color: var(--consultation-link-color);
     text-decoration: none;
@@ -82,9 +85,11 @@
   label {
     display: none;
   }
+
   .nav {
     visibility: visible;
   }
+
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
@@ -95,21 +100,25 @@
     flex-wrap: nowrap;
     align-items: center;
   }
+
   .brand {
     flex-basis: 40%;
     justify-self: start;
   }
+
   .nav {
     flex-basis: 60%;
     justify-self: end;
     height: auto;
   }
+
   .nav__link {
     font-size: 1.25rem;
     font-weight: bold;
     padding-bottom: 3px;
     border-bottom: 5px solid var(--nav-link-border-color);
   }
+
   .nav__link:hover,
   .nav__link:focus {
     border-bottom: 5px solid var(--nav-link-color);

@@ -31,11 +31,12 @@
   // Typography
 
   .brand h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
 
   .brand h2 {
+    font-size: 1.5rem;
     text-align: left;
   }
 
@@ -82,7 +83,7 @@
   // Navigation
 
   #nav-toggle,
-  label {
+  .hamburger {
     display: none;
   }
 
@@ -92,22 +93,24 @@
 
   .nav__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-self: flex-end;
+    text-align: center;
+    gap: 1rem;
   }
 
   #header .row {
     flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
+    gap: 0;
   }
 
   .brand {
-    flex-basis: 40%;
     justify-self: start;
   }
 
   .nav {
-    flex-basis: 60%;
     justify-self: end;
     height: auto;
   }
@@ -116,7 +119,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     padding-bottom: 3px;
-    border-bottom: 5px solid var(--nav-link-border-color);
+    border-bottom: 4px solid var(--nav-link-border-color);
   }
 
   .nav__link:hover,

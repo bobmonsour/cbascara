@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cynthia Bascara Speech Therapy | Home
-description: add description text for this page
+description: Cynthia Bascara is a speech therapist with more than 25 years of experience, working with students from toddlers to teens. She serves students throughout Marin County.
 keywords: Cynthia Bascara, Speech Therapist, Marin County
 permalink: "/"
 ---
@@ -12,7 +12,9 @@ permalink: "/"
       <h3 class="panel__title">
         Is your child challenged<br />by any of these?
       </h3>
-      <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
+      <a href="#arrangeconsultation" class="btn" role="button" tabindex="0"
+        >Arrange a Consultation</a
+      >
     </div>
     <ul class="panel__list">
       <li>Making proper speech sounds</li>
@@ -29,7 +31,9 @@ permalink: "/"
   <div class="container row">
     <div class="panel__head">
       <h3 class="panel__title">My Services</h3>
-      <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
+      <a href="#arrangeconsultation" class="btn" role="button" tabindex="0"
+        >Arrange a Consultation</a
+      >
     </div>
     <ul class="panel__list">
       <li>
@@ -50,7 +54,9 @@ permalink: "/"
       <h3 class="panel__title">
         I work in the location that works best for you and your child
       </h3>
-      <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
+      <a href="#arrangeconsultation" class="btn" role="button" tabindex="0"
+        >Arrange a Consultation</a
+      >
     </div>
     <ul class="panel__list">
       <li>Throughout Marin County</li>
@@ -66,7 +72,9 @@ permalink: "/"
     <div class="panel__head">
       <h3 class="panel__title">About Me</h3>
       <!-- TODO: Add a photo here -->
-      <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
+      <a href="#arrangeconsultation" class="btn" role="button" tabindex="0"
+        >Arrange a Consultation</a
+      >
     </div>
     <ul class="panel__list">
       <li>25+ years of experience as a speech therapist</li>
@@ -85,7 +93,9 @@ permalink: "/"
       <h3 class="panel__title">
         I've worked with students attending the following schools
       </h3>
-      <a href="#arrangeconsultation" class="btn">Arrange a Consultation</a>
+      <a href="#arrangeconsultation" class="btn" role="button" tabindex="0"
+        >Arrange a Consultation</a
+      >
     </div>
     <ul class="panel__list">
       <li>Marin Country Day School</li>
@@ -120,38 +130,29 @@ permalink: "/"
       {#
       <h2>say more here. or above, and remove this text</h2>
       #}
-      <fieldset>
-        <input placeholder="Your name" type="text" name="name" required />
-        <input class="other-form-field" name="bot-field" type="text" />
-      </fieldset>
-      <fieldset>
-        <input
-          placeholder="Your email address"
-          type="email"
-          name="email"
-          required
-        />
-      </fieldset>
-      <fieldset>
-        <input placeholder="Subject" type="text" name="subject" required />
-      </fieldset>
-      <fieldset>
-        <textarea
-          placeholder="Type your message here...."
-          name="message"
-          required
-        ></textarea>
-      </fieldset>
-      <fieldset>
-        <button
-          name="submit"
-          type="submit"
-          id="contact-submit"
-          data-submit="...Sending"
-        >
-          Send
-        </button>
-      </fieldset>
+
+      <label for="name">Your name</label>
+      <input type="text" name="name" id="name" tabindex="0" required />
+      <input class="other-form-field" name="bot-field" type="text" />
+
+      <label for="email">Your email address</label>
+      <input type="email" name="email" id="email" tabindex="0" required />
+
+      <label for="subject">The subject of your message</label>
+      <input type="text" name="subject" id="subject" tabindex="0" required />
+
+      <label for="message">Your message</label>
+      <textarea name="message" id="message" tabindex="0" required></textarea>
+
+      <button
+        name="submit"
+        type="submit"
+        id="contact-submit"
+        tabindex="0"
+        data-submit="...Sending"
+      >
+        Send
+      </button>
     </form>
   </div>
 </div>

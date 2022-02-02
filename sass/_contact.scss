@@ -18,6 +18,10 @@ fieldset {
   display: none;
 }
 
+#contact label {
+  padding-left: 0.25em;
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="subject"],

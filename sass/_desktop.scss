@@ -10,7 +10,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
   }
@@ -55,6 +55,7 @@
 
   .panel__list li {
     border-bottom: none;
+    line-height: 1.4;
   }
 
   p {

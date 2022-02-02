@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   // Outer structure
 
   .container {
@@ -30,14 +30,17 @@
 
   // Typography
 
+  .brand {
+    text-align: center;
+  }
+
   .brand h1 {
     font-size: 2.5rem;
-    text-align: left;
+    line-height: 1.2;
   }
 
   .brand h2 {
     font-size: 1.5rem;
-    text-align: left;
   }
 
   .panel__title {
@@ -106,12 +109,7 @@
     gap: 0;
   }
 
-  .brand {
-    justify-self: start;
-  }
-
   .nav {
-    justify-self: end;
     height: auto;
   }
 

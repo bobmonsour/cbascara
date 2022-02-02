@@ -93,6 +93,8 @@
 
   .nav {
     visibility: visible;
+    height: auto;
+    flex-grow: 1;
   }
 
   .nav__list {
@@ -103,15 +105,15 @@
     gap: 1rem;
   }
 
+  .push-right {
+    margin-left: auto;
+  }
+
   #header .row {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 0;
-  }
-
-  .nav {
-    height: auto;
   }
 
   .nav__link {

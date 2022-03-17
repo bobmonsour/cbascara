@@ -8,11 +8,11 @@ permalink: "/"
 
 <div class="container">
   <div class="panel" id="challenges">
-    <div class="panel__image image1">
-      {% image "src/img/challenges.jpg", "little girl reading Dr. Seuss",
+    <div class="panel__image">
+      {% image "src/img/challenges.jpg", "A little girl reading Dr. Seuss",
       "100vw" %}
     </div>
-    <div class="panel__text text1">
+    <div class="panel__text">
       <h3 class="panel__title">
         Your child may need speech / language therapy if they experience
         difficulties in any of the following:
@@ -30,8 +30,13 @@ permalink: "/"
       </ul>
     </div>
   </div>
+
   <div class="panel" id="services">
-    <div class="panel__text text2">
+    <div class="panel__image show-mobile">
+      {% image "src/img/services.jpg", "A happy student holding a pencil",
+      "100vw" %}
+    </div>
+    <div class="panel__text">
       <h3 class="panel__title">Services</h3>
       <ul class="panel__list">
         <li>
@@ -46,17 +51,17 @@ permalink: "/"
         <li>Regular communication of your child's progress</li>
       </ul>
     </div>
-    <div class="panel__image image3">
+    <div class="panel__image show-desktop">
       {% image "src/img/services.jpg", "A happy student holding a pencil",
       "100vw" %}
     </div>
   </div>
-  <div class="panel" id="typicalsession">
-    <div class="panel__image image4">
-      {% image "src/img/typicalsession.jpg", "A little boy reading", "100vw" %}
-    </div>
 
-    <div class="panel__text text3">
+  <div class="panel" id="typicalsession">
+    <div class="panel__image">
+      {% image "src/img/typicalsession.jpg", "A young boy reading", "100vw" %}
+    </div>
+    <div class="panel__text">
       <h3 class="panel__title">What does a therapy session look like?</h3>
       <p>
         Therapy will look somewhat different across the ages, but I strive to
@@ -70,8 +75,12 @@ permalink: "/"
       </p>
     </div>
   </div>
+
   <div class="panel" id="whereiwork">
-    <div class="panel__text text4">
+    <div class="panel__image show-mobile">
+      {% image "src/img/whereiwork.jpg", "A young girl reading", "100vw" %}
+    </div>
+    <div class="panel__text">
       <h3 class="panel__title">
         Therapy is provided in locations that support your child's comfort level
         and your schedule
@@ -83,17 +92,17 @@ permalink: "/"
         <li>Remotely via Zoom</li>
       </ul>
     </div>
-    <div class="panel__image image4">
-      {% image "src/img/whereiwork.jpg", "little girl reading Dr. Seuss",
-      "100vw" %}
+    <div class="panel__image show-desktop">
+      {% image "src/img/whereiwork.jpg", "A young girl reading", "100vw" %}
     </div>
   </div>
+
   <div class="panel" id="aboutme">
-    <div class="panel__image image6">
-      {% image "src/img/aboutme.jpg", "little girl reading Dr. Seuss", "100vw"
-      %}
+    <div class="panel__image">
+      {% image "src/img/aboutme.jpg", "Cynthia having fun with a student",
+      "100vw" %}
     </div>
-    <div class="panel__text text5">
+    <div class="panel__text">
       <h3 class="panel__title">About Me</h3>
       <ul class="panel__list">
         <li>
@@ -108,8 +117,13 @@ permalink: "/"
       </ul>
     </div>
   </div>
+
   <div class="panel" id="schoolsiworkedwith">
-    <div class="panel__text text6">
+    <div class="panel__image show-mobile">
+      {% image "src/img/schoolsiworkedwith.jpg", "Parents and students outside
+      of a school building", "100vw" %}
+    </div>
+    <div class="panel__text">
       <h3 class="panel__title">
         I've worked with students attending the following schools:
       </h3>
@@ -122,14 +136,13 @@ permalink: "/"
         <li>And more...</li>
       </ul>
     </div>
-    <div class="panel__image image6">
-      {% image "src/img/schoolsiworkedwith.jpg", "little girl reading Dr.
-      Seuss", "100vw" %}
+    <div class="panel__image show-desktop">
+      {% image "src/img/schoolsiworkedwith.jpg", "Parents and students outside
+      of a school building", "100vw" %}
     </div>
   </div>
 </div>
 
-<!-- <div class="panel" > -->
 <div class="container" id="arrangeconsultation">
   <div class="panel__text">
     <h3 class="panel__title">Arrange a Free Phone Consultation</h3>
@@ -181,4 +194,3 @@ permalink: "/"
     </button>
   </form>
 </div>
-<!-- </div> -->

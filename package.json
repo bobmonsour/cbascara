@@ -24,6 +24,7 @@
     "path": "^0.12.7",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
+    "postcss-jit-props": "^1.0.4",
     "rimraf": "^3.0.2",
     "sass": "^1.49.9"
   }

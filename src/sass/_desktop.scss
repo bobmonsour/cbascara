@@ -59,9 +59,11 @@
     line-height: 1.4;
   }
 
-  #arrangeconsultation .container {
-    width: 75ch;
+  #arrangeconsultation {
+    width: 90ch;
+    padding: 20px 50px;
     margin: 0 auto;
+    border-radius: 20px;
   }
 
   // Typography
@@ -76,6 +78,7 @@
   }
 
   .brand h2 {
+    font-weight: normal;
     font-size: 1.5rem;
   }
 
@@ -142,17 +145,18 @@
   .nav__link {
     font-size: 1.5rem;
     font-weight: normal;
-    padding-bottom: 3px;
+    padding: 3px;
     color: var(--brand-color);
     border-bottom: 4px solid var(--brand-color);
   }
 
   .nav__link:hover,
   .nav__link:focus {
-    border-top: 5px solid var(--brand-color);
+    background-color: var(--brand-color);
+    color: white;
   }
 
-  // Re-order the grid items, different than source order
+  // TODO: Re-order the grid items, different than source order
   // Source order is optimized for mobile
   // .image1 {
   //   order: 1;

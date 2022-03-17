@@ -129,11 +129,12 @@ permalink: "/"
   </div>
 </div>
 
-<!-- <div class="panel" id="arrangeconsultation">
-  <div class="container">
+<!-- <div class="panel" > -->
+<div class="container" id="arrangeconsultation">
+  <div class="panel__text">
     <h3 class="panel__title">Arrange a Free Phone Consultation</h3>
     <p>
-      To determine if your child may need speech/language assessment and/or
+      To determine if your child may need speech / language assessment and / or
       therapy or if you may have any additional questions please complete the
       form below.
     </p>
@@ -143,41 +144,41 @@ permalink: "/"
       you.
     </p>
     <p>Thank you!</p>
-
-    <form
-      id="contact"
-      name="Speech Therapy inquiry via website message"
-      action="/form-success.html"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-    >
-      {#
-      <h2>say more here. or above, and remove this text</h2>
-      #}
-
-      <label for="name">Your name</label>
-      <input type="text" name="name" id="name" tabindex="0" required />
-      <input class="other-form-field" name="bot-field" type="text" />
-
-      <label for="email">Your email address</label>
-      <input type="email" name="email" id="email" tabindex="0" required />
-
-      <label for="subject">The subject of your message</label>
-      <input type="text" name="subject" id="subject" tabindex="0" required />
-
-      <label for="message">Your message</label>
-      <textarea name="message" id="message" tabindex="0" required></textarea>
-
-      <button
-        name="submit"
-        type="submit"
-        id="contact-submit"
-        tabindex="0"
-        data-submit="...Sending"
-      >
-        Send
-      </button>
-    </form>
   </div>
-</div> -->
+  <form
+    id="contact"
+    name="Speech Therapy inquiry via website message"
+    action="/form-success.html"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
+    {#
+    <h2>say more here. or above, and remove this text</h2>
+    #}
+
+    <label for="name">Your name</label>
+    <input type="text" name="name" id="name" tabindex="0" required />
+    <input class="other-form-field" name="bot-field" type="text" />
+
+    <label for="email">Your email address</label>
+    <input type="email" name="email" id="email" tabindex="0" required />
+
+    <label for="subject">The subject of your message</label>
+    <input type="text" name="subject" id="subject" tabindex="0" required />
+
+    <label for="message">Your message</label>
+    <textarea name="message" id="message" tabindex="0" required></textarea>
+
+    <button
+      name="submit"
+      type="submit"
+      id="contact-submit"
+      tabindex="0"
+      data-submit="...Sending"
+    >
+      Send
+    </button>
+  </form>
+</div>
+<!-- </div> -->

@@ -20,6 +20,9 @@ main {
   grid-template-columns: 100%;
 }
 
+.container .panel__title {
+  color: var(--brand-color);
+}
 #header {
   padding: 0.75rem 0;
 }

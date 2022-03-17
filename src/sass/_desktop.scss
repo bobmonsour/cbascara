@@ -1,0 +1,193 @@
+@media screen and (min-width: 700px) {
+  // Outer structure
+
+  // Header and navigation uses flexbox
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Main content organized in a grid
+  // 2-wide in desktop, single column on mobile
+  .panel {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-auto-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .panel__image {
+    img {
+      border-radius: 20px;
+      height: auto;
+    }
+  }
+
+  .panel__text {
+    border-radius: 20px;
+
+    p {
+      font-size: var(--list-size);
+      font-family: var(--default-font);
+      color: white;
+      margin: 1rem 2rem;
+      line-height: 1.4;
+    }
+  }
+
+  .panel__title {
+    font-style: italic;
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: var(--title-size);
+  }
+
+  .panel__list {
+    list-style: square;
+    font-size: var(--list-size);
+    margin: 1rem 2rem;
+  }
+
+  .panel__list li {
+    border-bottom: none;
+    line-height: 1.4;
+  }
+
+  #arrangeconsultation .container {
+    width: 75ch;
+    margin: 0 auto;
+  }
+
+  // Typography
+
+  .brand {
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .brand h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 1.25rem;
+    padding: 10px 0 30px 0;
+  }
+
+  .btn {
+    width: fit-content;
+    padding: 0.5em 0.75em;
+    border-radius: 25px;
+    border: 1px solid darkgray;
+    margin: 0 auto;
+    background-color: var(--consultation-link-bg-color);
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--consultation-link-color);
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    opacity: 0.5;
+  }
+
+  // Navigation
+
+  #nav-toggle,
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    height: auto;
+    flex-grow: 1;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .push-right {
+    margin-left: auto;
+  }
+
+  #header .row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin: 1.5rem auto;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 3px;
+    color: var(--brand-color);
+    border-bottom: 4px solid var(--brand-color);
+  }
+
+  .nav__link:hover,
+  .nav__link:focus {
+    border-top: 5px solid var(--brand-color);
+  }
+
+  // Re-order the grid items, different than source order
+  // Source order is optimized for mobile
+  // .image1 {
+  //   order: 1;
+  // }
+  // .text1 {
+  //   order: 2;
+  // }
+  // .text2 {
+  //   order: 3;
+  // }
+  // .image2 {
+  //   order: 4;
+  // }
+  // .image3 {
+  //   order: 5;
+  // }
+  // .text3 {
+  //   order: 6;
+  // }
+  // .text4 {
+  //   order: 7;
+  // }
+  // .image4 {
+  //   order: 8;
+  // }
+  // .image5 {
+  //   order: 9;
+  // }
+  // .text5 {
+  //   order: 10;
+  // }
+  // .text6 {
+  //   order: 10;
+  // }
+  // .image6 {
+  //   order: 10;
+  // }
+}

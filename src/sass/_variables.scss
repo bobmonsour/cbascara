@@ -1,0 +1,35 @@
+:root {
+  // Fonts
+
+  --default-font: "Roboto", sans-serif;
+  --brand-font: "Dancing Script", cursive;
+  --title-font: "Times", serif;
+  --list-font: "Roboto", sans-serif;
+
+  // Font sizes
+
+  --title-size: var(--font-size-fluid-2);
+  --list-size: var(--font-size-fluid-1);
+
+  // Background colors
+
+  --body-bg-color: #f1efc6;
+  --header-bg-color: #c1e1dc;
+  --challenges-bg-color: #be5409;
+  --services-bg-color: #3d4e83;
+  --typicalsession-bg-color: #621b05;
+  --whereiwork-bg-color: #e9948f;
+  --aboutme-bg-color: #824022;
+  --schoolsiworkedwith-bg-color: #88725b;
+  --arrangeconsultation-bg-color: #ffeb94;
+  --form-bg-color: #c1e1dc;
+  --footer-bg-color: #c1e1dc;
+
+  // Other colors
+
+  --brand-color: #be5409;
+  --nav-link-color: #000;
+  --nav-link-border-color: #be5409;
+  --consultation-link-bg-color: #bbbbbb;
+  --consultation-link-color: #000;
+}

@@ -1,0 +1,223 @@
+// This site is designed mobile-first. As such, this file, mobile.scss, defines all the base styles. Support other devices, such as tablets, laptops, and desktops, is handled via media queries in the desktop.scss file.
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+// Outer structure
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+#header .container {
+  padding: 1rem 0;
+}
+
+// Typography
+
+body {
+  font-family: var(--default-font);
+}
+
+.brand h1 {
+  font-family: var(--brand-font);
+  font-size: 2.25rem;
+  text-align: center;
+  padding: 0;
+}
+
+.brand h1 a {
+  text-decoration: none;
+  color: var(--brand-color);
+}
+
+.brand h1 a:hover,
+.brand h1 a:focus {
+  opacity: 0.5;
+}
+
+.brand h2 {
+  font-family: var(--default-font);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--brand-color);
+}
+
+.panel__title {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.3;
+  text-align: center;
+  margin: 1rem;
+}
+
+.panel__list {
+  list-style: none;
+  font-family: var(--list-font);
+  font-size: 1rem;
+  line-height: 1.75;
+  padding: 0 1rem;
+}
+
+.panel__list li {
+  padding: 0.25em 0;
+  border-bottom: 1px dotted darkgray;
+}
+.panel__list li:last-of-type {
+  border-bottom: none;
+}
+
+p {
+  line-height: 1.3;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+footer p {
+  font-family: var(--default-font);
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+  color: var(--brand-color);
+}
+
+// Don't show the call-to-action button on mobile
+
+.btn {
+  display: none;
+}
+
+// Panel background colors
+
+// #header {
+//   background-color: var(--header-bg-color);
+// }
+
+#challenges {
+  background-color: var(--challenges-bg-color);
+  color: white;
+}
+
+#services {
+  background-color: var(--services-bg-color);
+  color: white;
+}
+
+#typicalsession {
+  background-color: var(--typicalsession-bg-color);
+  color: white;
+}
+#whereiwork {
+  background-color: var(--whereiwork-bg-color);
+  color: white;
+}
+
+#aboutme {
+  background-color: var(--aboutme-bg-color);
+  color: white;
+}
+
+#schoolsiworkedwith {
+  background-color: var(--schoolsiworkedwith-bg-color);
+  color: white;
+}
+
+// #arrangeconsultation {
+//   background-color: var(--arrangeconsultation-bg-color);
+// }
+
+footer {
+  padding: 1.5em 0;
+}
+
+// Navigation
+
+#nav-toggle {
+  position: absolute;
+  top: 0.25em;
+  right: 1em;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+}
+
+.nav {
+  visibility: hidden;
+  text-align: center;
+  height: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__list li {
+  padding: 1.25em 0;
+}
+
+.nav__link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  margin: 0.5em 0;
+}
+
+// .nav__link:hover,
+// .nav__link:focus {
+//   opacity: 0.5;
+// }
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  background: black;
+  height: 3px;
+  width: 25px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}

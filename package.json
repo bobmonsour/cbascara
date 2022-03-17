@@ -1,20 +1,30 @@
 {
   "name": "cynthia_bascara_speech_therapist",
   "version": "1.0.0",
-  "description": "The website of Cynthia Bascara, Speech Therapist",
+  "description": "The website of Cynthia Bascara, Speech and Language Therapist",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:sass": "npx sass sass:_site/css --watch",
-    "start": "npm run watch:eleventy & npm run watch:sass",
-    "build": "sass sass:_site/css && eleventy"
+    "watch:sass": "sass --watch src/sass/main-dev.scss:_site/css/main.css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass --no-source-map src/sass/main-prod.scss:_site/css/main.css",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss _site/css/main.css -o _site/css/main.css",
+    "start": "npm-run-all --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy",
+    "clean": "rimraf ./_site"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "sass": "^1.47.0"
+    "@11ty/eleventy-img": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "open-props": "^1.3.9",
+    "path": "^0.12.7",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.9"
   }
 }

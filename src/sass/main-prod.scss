@@ -1,0 +1,9 @@
+// Main Sass file
+// Includes all other scss files via @import
+// Imported files must have filenames that start with an underscore (excluded on the @import command)
+@import "reset";
+@import "variables";
+@import "navigation";
+@import "mobile";
+@import "contact";
+@import "desktop";

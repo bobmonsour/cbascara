@@ -6,13 +6,18 @@ html {
 
 body {
   background-color: var(--body-bg-color);
+  font-family: var(--default-font);
+  font-size: var(--default-size);
+  color: var(--default-color);
 }
-
-// Outer structure
 
 main {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 0.75rem 0;
 }
 
 .container {
@@ -20,45 +25,40 @@ main {
   grid-template-columns: 100%;
 }
 
-#header {
-  padding: 0.75rem 0;
-}
+// Brand styles
 
-// Typography
-
-body {
-  font-family: var(--default-font);
-}
-
-.brand h1 {
-  font-family: var(--brand-font);
-  font-size: 2.25rem;
+.brand {
   text-align: center;
+}
+.brand__title {
+  font-family: var(--brand-title-font);
+  font-size: var(--brand-title-size);
   padding: 0;
 }
 
-.brand h1 a {
+.brand__title a {
   text-decoration: none;
   color: var(--brand-color);
 }
 
-.brand h1 a:hover,
-.brand h1 a:focus {
+.brand__title a:hover,
+.brand__title a:focus {
   opacity: 0.5;
 }
 
-.brand h2 {
+.brand__subtitle {
   font-family: var(--default-font);
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
+  font-size: var(--brand-subtitle-size);
+  font-weight: var(--brand-subtitle-weight);
   color: var(--brand-color);
 }
 
+// Panel styles
+
 .panel__title {
-  font-family: var(--title-font);
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-family: var(--panel-title-font);
+  font-size: var(--panel-title-size);
+  font-weight: var(--panel-title-weight);
   line-height: 1.3;
   text-align: center;
   margin: 1.25rem 1rem;
@@ -66,15 +66,10 @@ body {
 
 .panel__list {
   list-style: none;
-  font-family: var(--list-font);
-  font-size: 1rem;
+  font-family: var(--panel-list-font);
+  font-size: var(--panel-list-size);
   line-height: 1.75;
   padding: 0 1rem;
-}
-
-.panel__text p {
-  padding: 1em;
-  line-height: 1.5;
 }
 
 .panel__list li {
@@ -86,6 +81,12 @@ body {
   padding: 0 0 2em 0;
 }
 
+.panel__text {
+  font-size: var(--panel-text-size);
+  padding: 1em;
+  line-height: 1.5;
+}
+
 .show-desktop {
   display: none;
 }
@@ -93,68 +94,47 @@ body {
   display: block;
 }
 
-p {
-  line-height: 1.3;
-  text-align: left;
-  padding-bottom: 1em;
+// Footer styles
+
+footer {
+  padding: 1.5em 0;
 }
 
 footer p {
   font-family: var(--default-font);
-  font-size: 1rem;
+  font-size: var(--default-size);
   text-align: center;
-  padding: 0;
   color: var(--brand-color);
 }
 
-// Don't show the call-to-action button on mobile
-
-.btn {
-  display: none;
-}
-
-// Panel background colors
-
-// #header {
-//   background-color: var(--header-bg-color);
-// }
+// Panel background and text colors
 
 #challenges {
   background-color: var(--challenges-bg-color);
-  color: white;
 }
 
 #services {
   background-color: var(--services-bg-color);
-  color: white;
 }
 
 #typicalsession {
   background-color: var(--typicalsession-bg-color);
-  color: white;
 }
 #whereiwork {
   background-color: var(--whereiwork-bg-color);
-  color: white;
 }
 
 #aboutme {
   background-color: var(--aboutme-bg-color);
-  color: white;
 }
 
 #schoolsiworkedwith {
   background-color: var(--schoolsiworkedwith-bg-color);
-  color: white;
 }
 
 #arrangeconsultation {
   background-color: var(--brand-color);
-  color: white;
-}
-
-footer {
-  padding: 1.5em 0;
+  border-radius: 0;
 }
 
 // Navigation
@@ -189,17 +169,12 @@ footer {
 }
 
 .nav__link {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: var(--nav-link-size);
+  font-weight: var(--nav-link-weight);
   text-decoration: none;
-  color: var(--brand-color);
+  color: var(--nav-link-color);
   margin: 0.5em 0;
 }
-
-// .nav__link:hover,
-// .nav__link:focus {
-//   opacity: 0.5;
-// }
 
 .nav--visible {
   visibility: visible;

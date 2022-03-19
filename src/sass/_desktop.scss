@@ -62,10 +62,7 @@
     border-bottom: none;
   }
 
-  #arrangeconsultation {
-    width: 90ch;
-    padding: 20px 50px;
-    margin: 0 auto;
+  #arrangeaconsultation {
     border-radius: var(--panel-radius);
   }
 
@@ -111,7 +108,8 @@
   }
 
   .nav__link:hover,
-  .nav__link:focus {
+  .nav__link:focus,
+  .current {
     background-color: var(--nav-link-hover-bg-color);
     color: var(--nav-link-hover-color);
   }

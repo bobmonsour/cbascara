@@ -5,6 +5,7 @@
       <h2 class="brand__subtitle">MS, CCC-SLP</h2>
       <h2 class="brand__subtitle">Speech & Language Therapy</h2>
     </div>
+
     <button id="nav-toggle" aria-label="open navigation" type="button"></button>
     <label for="nav-toggle" class="hamburger-label">
       <span class="hamburger"></span>
@@ -12,36 +13,12 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="push-right">
-          <a href="{{ site.url }}/" class="nav__link" tabindex="0" aria-label="Services"
-            >Home</a
-          >
+      {% for link in site.mainNavLinks %}
+        <li {% if link.class %} class="{{ link.class }}" {% endif %}>
+          <a href="{% if site.env == "production" %}{{ site.prod_url}}{{ link.url }}{% else %}{{site.dev_url}}{{ link.url }}{% endif %}"
+            {% if page.url == link.url %} aria-current="page" class="nav__link current" {% else %}class="nav__link" {% endif %}>{{ link.text }}</a>
         </li>
-        <li>
-          <a href="{{ site.url }}/services/" class="nav__link" tabindex="0" aria-label="Services"
-            >Services</a
-          >
-        </li>
-        <li>
-          <a href="{{ site.url }}/typicalsession/" class="nav__link" tabindex="0" aria-label="A Typical Session"
-            >Therapy Looks Like...</a
-          >
-        </li>
-        <li>
-          <a href="{{ site.url }}/whereiwork/" class="nav__link" tabindex="0" aria-label="Where I Work"
-            >Where I Work</a
-          >
-        </li>
-        <li>
-          <a href="{{ site.url }}/aboutme/" class="nav__link" tabindex="0" aria-label="About Me">About Me</a>
-        </li>
-        <li>
-          <a
-          href="{{ site.url }}/arrangeaconsultation/"
-            class="nav__link consultation__link" tabindex="0" aria-label="Arrange a Consultation"
-            >Arrange a Consultation</a
-          >
-        </li>
+      {% endfor %}
       </ul>
     </nav>
   </div>

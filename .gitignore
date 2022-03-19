@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
 _site/
-src/resources/
+resources/
 todo.md
 scratch.md

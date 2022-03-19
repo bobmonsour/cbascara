@@ -1,35 +1,79 @@
 :root {
-  // Fonts
+  // Defaults
 
-  --default-font: "Roboto", sans-serif;
-  --brand-font: "Dancing Script", cursive;
-  --title-font: "Times", serif;
-  --list-font: "Roboto", sans-serif;
+  --body-bg-color: var(--orange-0);
 
-  // Font sizes
+  --default-font: var(--font-sans);
+  --default-size: var(--font-size-fluid-1);
+  --default-color: var(--body-bg-color);
 
-  --title-size: var(--font-size-fluid-2);
-  --list-size: var(--font-size-fluid-1);
+  // Fluid font styles via https://utopia.fyi/type/calculator
 
-  // Background colors
+  --step--2: clamp(0.96rem, calc(0.89rem + 0.1vw), 0.91rem);
+  --step--1: clamp(1.2rem, calc(1.05rem + 0.21vw), 1.09rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
 
-  --body-bg-color: #f1efc6;
-  --header-bg-color: #c1e1dc;
+  // Brand styles
+
+  --brand-color: var(--orange-9);
+
+  --brand-title-font: "Dancing Script", cursive;
+  // --brand-title-size: var(--font-size-fluid-3);
+  --brand-title-size: var(--step-3);
+
+  // --brand-subtitle-size: var(--font-size-fluid-1);
+  --brand-subtitle-size: var(--step-0);
+  --brand-subtitle-weight: var(--font-weight-4);
+
+  // Navigation styles
+
+  // --nav-link-size: var(--font-size-fluid-1);
+  --nav-link-size: var(--step--1);
+  --nav-link-weight: var(--font-weight-4);
+  --nav-link-color: var(--brand-color);
+
+  --nav-link-hover-bg-color: var(--brand-color);
+  --nav-link-hover-color: var(--default-color);
+
+  // Panel styles
+
+  --panel-radius: var(--radius-3);
+  --panel-image-radius: var(--radius-3);
+
+  --panel-title-font: var(--font-serif);
+  // --panel-title-size: var(--font-size-fluid-2);
+  --panel-title-size: var(--step-2);
+  --panel-title-weight: var(--font-weight-4);
+
+  --panel-list-font: var(--font-sans);
+  // --panel-list-size: var(--font-size-fluid-1);
+  --panel-list-size: var(--step-0);
+
+  --panel-text-font: var(--font-sans);
+  // --panel-text-size: var(--font-size-fluid-1);
+  --panel-text-size: var(--step-0);
+
+  // Panel background colors
+  // Selected to match element of related image
+  // Linked to id of each panel
+
   --challenges-bg-color: #be5409;
   --services-bg-color: #3d4e83;
   --typicalsession-bg-color: #621b05;
   --whereiwork-bg-color: #e9948f;
   --aboutme-bg-color: #824022;
   --schoolsiworkedwith-bg-color: #88725b;
-  --arrangeconsultation-bg-color: #ffeb94;
-  --form-bg-color: #c1e1dc;
-  --footer-bg-color: #c1e1dc;
 
-  // Other colors
+  --arrangeconsultation-bg-color: var(--brand-color);
+  --form-bg-color: var(--body-bg-color);
 
-  --brand-color: #be5409;
-  --nav-link-color: #000;
-  --nav-link-border-color: #be5409;
-  --consultation-link-bg-color: #bbbbbb;
-  --consultation-link-color: #000;
+  // Form styles
+
+  --contact-form-radius: var(--radius-3);
+  --contact-button-radius: var(--radius-3);
 }

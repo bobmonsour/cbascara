@@ -5,6 +5,7 @@ form {
   margin: 30px auto;
   padding: 20px 10px 10px 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: var(--contact-form-radius);
 }
 
 fieldset {
@@ -57,15 +58,16 @@ fieldset {
   cursor: pointer;
   width: 200px;
   border: none;
+  border-radius: var(--contact-button-radius);
   background-color: var(--brand-color);
-  color: white;
+  color: var(--default-color);
   padding: 10px;
   font-family: var(--default-font);
-  font-size: 1rem;
+  font-size: var(--default-size);
 }
 
 #contact button[type="submit"]:hover {
-  background-color: var(--schoolsiworkedwith-bg-color);
+  background-color: var(--brand-color);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -81,18 +83,18 @@ fieldset {
   border: 1px solid #aaa;
 }
 
-::-webkit-input-placeholder {
-  color: #888;
-}
+// ::-webkit-input-placeholder {
+//   color: #888;
+// }
 
-:-moz-placeholder {
-  color: #888;
-}
+// :-moz-placeholder {
+//   color: #888;
+// }
 
-::-moz-placeholder {
-  color: #888;
-}
+// ::-moz-placeholder {
+//   color: #888;
+// }
 
-:-ms-input-placeholder {
-  color: #888;
-}
+// :-ms-input-placeholder {
+//   color: #888;
+// }

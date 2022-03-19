@@ -1,37 +1,43 @@
-<header id="header">
+<header class="header">
   <div class="row">
     <div class="brand">
-      <h1><a href="{{ site.baseurl }}" aria-label="Cynthia Bascara Speech Therapy">Cynthia Bascara</a></h1>
-      <h2>MS, CCC-SLP</h2>
-      <h2>Speech & Language Therapy</h2>
+      <h1 class="brand__title"><a href="{{ site.url }}" aria-label="Cynthia Bascara Speech Therapy">Cynthia Bascara</a></h1>
+      <h2 class="brand__subtitle">MS, CCC-SLP</h2>
+      <h2 class="brand__subtitle">Speech & Language Therapy</h2>
     </div>
     <button id="nav-toggle" aria-label="open navigation" type="button"></button>
     <label for="nav-toggle" class="hamburger-label">
       <span class="hamburger"></span>
     </label>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="push-right">
-          <a href="{{ site.baseurl }}#services" class="nav__link" tabindex="0" aria-label="Services"
+          <a href="{{ site.url }}/" class="nav__link" tabindex="0" aria-label="Services"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.url }}/services/" class="nav__link" tabindex="0" aria-label="Services"
             >Services</a
           >
         </li>
         <li>
-          <a href="{{ site.baseurl }}#typicalsession" class="nav__link" tabindex="0" aria-label="A Typical Session"
+          <a href="{{ site.url }}/typicalsession/" class="nav__link" tabindex="0" aria-label="A Typical Session"
             >Therapy Looks Like...</a
           >
         </li>
         <li>
-          <a href="{{ site.baseurl }}#whereiwork" class="nav__link" tabindex="0" aria-label="Where I Work"
+          <a href="{{ site.url }}/whereiwork/" class="nav__link" tabindex="0" aria-label="Where I Work"
             >Where I Work</a
           >
         </li>
         <li>
-          <a href="{{ site.baseurl }}#aboutme" class="nav__link" tabindex="0" aria-label="About Me">About Me</a>
+          <a href="{{ site.url }}/aboutme/" class="nav__link" tabindex="0" aria-label="About Me">About Me</a>
         </li>
         <li>
           <a
-            href="{{ site.baseurl }}#arrangeconsultation"
+          href="{{ site.url }}/arrangeaconsultation/"
             class="nav__link consultation__link" tabindex="0" aria-label="Arrange a Consultation"
             >Arrange a Consultation</a
           >

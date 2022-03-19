@@ -19,13 +19,13 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: var(--panel-radius);
     margin-bottom: 1rem;
   }
 
   .panel__image {
     img {
-      border-radius: 20px;
+      border-radius: var(--panel-image-radius);
       height: auto;
     }
   }
@@ -37,83 +37,36 @@
     display: none;
   }
 
-  .panel__text {
-    border-radius: 20px;
-
-    p {
-      font-size: var(--list-size);
-      font-family: var(--default-font);
-      color: white;
-      margin: 1rem 2rem;
-      line-height: 1.4;
-    }
-  }
-
   .panel__title {
     font-style: italic;
     margin: 1rem 1rem 2rem 1rem;
-    font-size: var(--title-size);
+    font-size: var(--panel-title-size);
+  }
+
+  .panel__text {
+    font-size: var(--panel-text-size);
+    font-family: var(--panel-text-size);
+    color: var(--default-color);
+    margin: 1rem 2rem;
+    line-height: 1.4;
   }
 
   .panel__list {
     list-style: square;
-    font-size: var(--list-size);
+    font-size: var(--panel-list-size);
+    line-height: 1.4;
     margin: 1rem 2rem;
   }
 
   .panel__list li {
     border-bottom: none;
-    line-height: 1.4;
   }
 
   #arrangeconsultation {
     width: 90ch;
     padding: 20px 50px;
     margin: 0 auto;
-    border-radius: 20px;
-  }
-
-  // Typography
-
-  .brand {
-    text-align: center;
-  }
-
-  .brand h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-
-  .brand h2 {
-    font-weight: normal;
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1.25rem;
-  }
-
-  footer p {
-    font-size: 1.25rem;
-    padding: 10px 0 30px 0;
-  }
-
-  .btn {
-    width: fit-content;
-    padding: 0.5em 0.75em;
-    border-radius: 25px;
-    border: 1px solid darkgray;
-    margin: 0 auto;
-    background-color: var(--consultation-link-bg-color);
-    display: block;
-    font-size: 1.2rem;
-    text-align: center;
-    color: var(--consultation-link-color);
-    text-decoration: none;
-  }
-
-  .btn:hover {
-    opacity: 0.5;
+    border-radius: var(--panel-radius);
   }
 
   // Navigation
@@ -141,64 +94,25 @@
     margin-left: auto;
   }
 
-  #header .row {
+  .header .row {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 0;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
   }
 
   .nav__link {
-    font-size: 1.5rem;
-    font-weight: normal;
+    font-size: var(--nav-link-size);
+    font-weight: var(--nav-link-weight);
     padding: 3px;
-    color: var(--brand-color);
-    border-bottom: 4px solid var(--brand-color);
+    color: var(--nav-link-color);
+    border-bottom: 1px dotted var(--nav-link-color);
   }
 
   .nav__link:hover,
   .nav__link:focus {
-    background-color: var(--brand-color);
-    color: white;
+    background-color: var(--nav-link-hover-bg-color);
+    color: var(--nav-link-hover-color);
   }
-
-  // TODO: Re-order the grid items, different than source order
-  // Source order is optimized for mobile
-  // .image1 {
-  //   order: 1;
-  // }
-  // .text1 {
-  //   order: 2;
-  // }
-  // .text2 {
-  //   order: 3;
-  // }
-  // .image2 {
-  //   order: 4;
-  // }
-  // .image3 {
-  //   order: 5;
-  // }
-  // .text3 {
-  //   order: 6;
-  // }
-  // .text4 {
-  //   order: 7;
-  // }
-  // .image4 {
-  //   order: 8;
-  // }
-  // .image5 {
-  //   order: 9;
-  // }
-  // .text5 {
-  //   order: 10;
-  // }
-  // .text6 {
-  //   order: 10;
-  // }
-  // .image6 {
-  //   order: 10;
-  // }
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  env: "development",
+  env: "production",
   dev_url: "http://192.168.4.106:8080",
   prod_url: "https://cbascara.netlify.app",
   mainNavLinks: [

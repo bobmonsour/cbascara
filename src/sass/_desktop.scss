@@ -8,14 +8,6 @@
     margin: 0 auto;
   }
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-
   // Main content organized in a grid
   // 2-wide in desktop/tablet, single column on mobile
   .panel {
@@ -27,6 +19,20 @@
     padding: 20px;
     border-radius: var(--panel-radius);
     margin-bottom: 1rem;
+  }
+
+  .panel__list {
+    list-style: square;
+    line-height: 1.5;
+    margin: 1rem 2rem;
+  }
+
+  .panel__list li {
+    border-bottom: none;
+  }
+
+  .panel__text {
+    margin: 0 2rem;
   }
 
   .panel__image {
@@ -43,32 +49,21 @@
     display: none;
   }
 
-  .panel__title {
-    margin: 1rem 1rem 2rem 1rem;
-    font-size: var(--panel-title-size);
-  }
-
-  .panel__text {
-    font-size: var(--panel-text-size);
-    font-family: var(--panel-text-size);
-    color: var(--default-color);
-    margin: 0 2rem;
-    line-height: 1.5;
-  }
-
-  .panel__list {
-    list-style: square;
-    font-size: var(--panel-list-size);
-    line-height: 1.5;
-    margin: 1rem 2rem;
-  }
-
-  .panel__list li {
-    border-bottom: none;
-  }
-
   #arrangeaconsultation {
     border-radius: var(--panel-radius);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // At larger screens, brand and navigation change positions
+
+  // Brand and nav become flex items
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   // Navigation
@@ -85,23 +80,20 @@
   }
 
   .nav__list {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: flex-end;
     text-align: center;
     gap: 1rem;
+
+    li {
+      align-self: center;
+    }
   }
 
   .push-right {
     margin-left: auto;
-  }
-
-  .header .row {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-    margin: 1em auto;
   }
 
   .nav__link {

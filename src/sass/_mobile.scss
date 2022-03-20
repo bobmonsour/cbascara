@@ -170,6 +170,7 @@ footer p {
 }
 
 .nav__link {
+  font-family: var(--nav-link-font);
   font-size: var(--nav-link-size);
   font-weight: var(--nav-link-weight);
   text-decoration: none;

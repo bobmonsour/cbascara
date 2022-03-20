@@ -2,6 +2,12 @@
   // Outer structure
 
   // Header and navigation uses flexbox
+
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +17,7 @@
   }
 
   // Main content organized in a grid
-  // 2-wide in desktop, single column on mobile
+  // 2-wide in desktop/tablet, single column on mobile
   .panel {
     display: grid;
     grid-template-columns: repeat(2, 49%);
@@ -38,7 +44,6 @@
   }
 
   .panel__title {
-    font-style: italic;
     margin: 1rem 1rem 2rem 1rem;
     font-size: var(--panel-title-size);
   }
@@ -47,14 +52,14 @@
     font-size: var(--panel-text-size);
     font-family: var(--panel-text-size);
     color: var(--default-color);
-    margin: 1rem 2rem;
-    line-height: 1.4;
+    margin: 0 2rem;
+    line-height: 1.5;
   }
 
   .panel__list {
     list-style: square;
     font-size: var(--panel-list-size);
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 1rem 2rem;
   }
 
@@ -96,7 +101,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0;
-    margin: 1rem auto;
+    margin: 1em auto;
   }
 
   .nav__link {

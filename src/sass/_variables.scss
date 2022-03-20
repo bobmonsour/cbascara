@@ -7,6 +7,26 @@
   --default-size: var(--font-size-2);
   --default-color: var(--body-bg-color);
 
+  // Font sizes at various breakpoints
+
+  @media screen and (max-width: 699px) {
+    --brand-title-size: var(--font-size-5);
+    --brand-subtitle-size: var(--font-size-2);
+    --nav-link-size: var(--font-size-2);
+    --panel-title-size: var(--font-size-3);
+    --panel-list-size: var(--font-size-1);
+    --panel-text-size: var(--font-size-1);
+  }
+
+  @media screen and (min-width: 700px) {
+    --brand-title-size: var(--font-size-6);
+    --brand-subtitle-size: var(--font-size-2);
+    --nav-link-size: var(--font-size-2);
+    --panel-title-size: var(--font-size-5);
+    --panel-list-size: var(--font-size-3);
+    --panel-text-size: var(--font-size-3);
+  }
+
   // Brand styles
 
   --brand-color: var(--orange-9);
@@ -48,24 +68,4 @@
 
   --contact-form-radius: var(--radius-3);
   --contact-button-radius: var(--radius-3);
-}
-
-// Font sizes at various breakpoints
-
-@media screen and (max-width: 699px) {
-  --brand-title-size: var(--font-size-5);
-  --brand-subtitle-size: var(--font-size-2);
-  --nav-link-size: var(--font-size-2);
-  --panel-title-size: var(--font-size-3);
-  --panel-list-size: var(--font-size-1);
-  --panel-text-size: var(--font-size-1);
-}
-
-@media screen and (min-width: 700px) {
-  --brand-title-size: var(--font-size-6);
-  --brand-subtitle-size: var(--font-size-2);
-  --nav-link-size: var(--font-size-2);
-  --panel-title-size: var(--font-size-5);
-  --panel-list-size: var(--font-size-3);
-  --panel-text-size: var(--font-size-3);
 }

@@ -52,6 +52,30 @@
   #arrangeaconsultation {
     border-radius: var(--panel-radius);
   }
+
+  .nav-below-panel {
+    display: flex;
+    &.right {
+      margin-left: auto;
+    }
+    &.left {
+      margin-right: auto;
+    }
+    a {
+      text-decoration: none;
+      font-size: var(--nav-link-size);
+      font-weight: var(--nav-link-weight);
+      color: var(--brand-color);
+      padding: 5px;
+      border-bottom: 1px dotted var(--nav-link-color);
+
+      &:hover {
+        background-color: var(--nav-link-hover-bg-color);
+        color: var(--nav-link-hover-color);
+        border-radius: var(--radius-3);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -110,29 +134,5 @@
     background-color: var(--nav-link-hover-bg-color);
     color: var(--nav-link-hover-color);
     border-radius: var(--radius-3);
-  }
-
-  .nav-below-panel {
-    display: flex;
-    &.right {
-      margin-left: auto;
-    }
-    &.left {
-      margin-right: auto;
-    }
-    a {
-      text-decoration: none;
-      font-size: var(--nav-link-size);
-      font-weight: var(--nav-link-weight);
-      color: var(--brand-color);
-      padding: 5px;
-      border-bottom: 1px dotted var(--nav-link-color);
-
-      &:hover {
-        background-color: var(--nav-link-hover-bg-color);
-        color: var(--nav-link-hover-color);
-        border-radius: var(--radius-3);
-      }
-    }
   }
 }

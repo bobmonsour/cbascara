@@ -85,7 +85,7 @@
     justify-content: center;
     align-self: flex-end;
     text-align: center;
-    gap: 1rem;
+    gap: 0.5rem;
 
     li {
       align-self: center;
@@ -99,7 +99,7 @@
   .nav__link {
     font-size: var(--nav-link-size);
     font-weight: var(--nav-link-weight);
-    padding: 3px;
+    padding: 5px;
     color: var(--nav-link-color);
     border-bottom: 1px dotted var(--nav-link-color);
   }
@@ -109,5 +109,30 @@
   .current {
     background-color: var(--nav-link-hover-bg-color);
     color: var(--nav-link-hover-color);
+    border-radius: var(--radius-3);
+  }
+
+  .nav-below-panel {
+    display: flex;
+    &.right {
+      margin-left: auto;
+    }
+    &.left {
+      margin-right: auto;
+    }
+    a {
+      text-decoration: none;
+      font-size: var(--nav-link-size);
+      font-weight: var(--nav-link-weight);
+      color: var(--brand-color);
+      padding: 5px;
+      border-bottom: 1px dotted var(--nav-link-color);
+
+      &:hover {
+        background-color: var(--nav-link-hover-bg-color);
+        color: var(--nav-link-hover-color);
+        border-radius: var(--radius-3);
+      }
+    }
   }
 }

@@ -65,6 +65,16 @@ main {
   padding: 0.5rem 0;
 }
 
+.panel__subtitle {
+  font-family: var(--panel-list-font);
+  font-size: var(--panel-list-size);
+  font-weight: var(--panel-title-weight);
+  font-style: italic;
+  line-height: 1.3;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
 .panel__list {
   list-style: none;
   font-family: var(--panel-list-font);

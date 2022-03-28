@@ -9,7 +9,7 @@ module.exports = {
       url: "/typicalsession/",
       text: "Therapy Looks Like...",
     },
-    { url: "/whereiwork/", text: "Where I Work" },
+    { url: "/whereiwork/", text: "Where Cynthia Works" },
     { url: "/aboutme/", text: "About Me" },
     {
       url: "/arrangeaconsultation/",

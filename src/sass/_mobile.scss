@@ -65,6 +65,10 @@ main {
   padding: 0.5rem;
 }
 
+.small {
+  font-size: var(--panel-title-small-size);
+}
+
 .panel__subtitle {
   font-family: var(--panel-list-font);
   font-size: var(--panel-list-size);

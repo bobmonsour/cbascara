@@ -17,7 +17,7 @@
     --panel-title-small-size: var(--font-size-2);
     --panel-list-size: var(--font-size-1);
     --panel-text-size: var(--font-size-1);
-    --insurance-text-size: var(--font-size-0);
+    --insurance-text-size: var(--font-size-1);
   }
 
   @media screen and (min-width: 700px) {
@@ -28,6 +28,7 @@
     --panel-title-small-size: var(--font-size-4);
     --panel-list-size: var(--font-size-3);
     --panel-text-size: var(--font-size-3);
+    --insurance-text-size: var(--font-size-3);
   }
 
   // Brand styles
@@ -59,11 +60,9 @@
 
   --challenges-bg-color: #be5409;
   --services-bg-color: #3d4e83;
-  // --typicalsession-bg-color: #621b05; -- old
-  --typicalsession-bg-color: #37422c;
-  // --whereiwork-bg-color: #e9948f; -- old
-  --whereiwork-bg-color: #9c7b71;
-  --aboutme-bg-color: #824022;
+  --typicalsession-bg-color: #6b8176;
+  --whereiwork-bg-color: #37422c;
+  --aboutme-bg-color: #af6052;
   --schoolsiworkedwith-bg-color: #88725b;
 
   --arrangeconsultation-bg-color: var(--brand-color);

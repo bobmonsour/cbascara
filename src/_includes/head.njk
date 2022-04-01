@@ -9,8 +9,9 @@
   <meta property="og:title" content="Cynthia Bascara, MS, CCC-SLP, Speech & Language Therapy">
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="https://cbascara.netlify.app/img/{{ image }}">
-  <meta property="og:url" content="https://cbascara.netlify.app">
+  <meta property="og:image" content="{% if site.env == "prod" %}{{ site.prod_url}}/{{ image }}{% else %}{{site.dev_url}}/{{ image }}{% endif %}">
+  {# <meta property="og:image" content="https://cbascara.netlify.app/img/{{ image }}"> #}
+  <meta property="og:url" content="{% if site.env == "prod" %}{{ site.prod_url}}{% else %}{{site.dev_url}}{% endif %}">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />

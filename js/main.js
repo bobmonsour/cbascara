@@ -4,6 +4,6 @@ navToggle.addEventListener("click", () => {
   nav.classList.toggle("nav--visible");
 });
 
-confetti({
-  spread: 180,
-});
+// confetti({
+//   spread: 180,
+// });

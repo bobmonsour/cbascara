@@ -157,6 +157,12 @@ footer p {
   border-radius: 0;
 }
 
+.panel#formsuccess {
+  display: block;
+  background-color: var(--brand-color);
+  border-radius: var(--radius-3);
+}
+
 // Navigation
 
 #nav-toggle {

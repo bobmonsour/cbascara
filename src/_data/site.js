@@ -1,7 +1,7 @@
 module.exports = {
   env: process.env.ELEVENTY_ENV,
   dev_url: "http://localhost:8080",
-  prod_url: "https://cbascaraspeechtherapy.netlify.app",
+  prod_url: "http://www.cbascaraspeechtherapy.com",
   mainNavLinks: [
     { url: "/", text: "Home", class: "push-right" },
     { url: "/services/", text: "Services" },

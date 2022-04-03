@@ -84,7 +84,7 @@
   // Brand and nav become flex items
   .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     gap: 1rem;
     justify-content: center;
     align-items: center;

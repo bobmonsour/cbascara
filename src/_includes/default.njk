@@ -7,7 +7,7 @@
     {{ content | safe }}
   </main>
   {% include 'footer.njk' %}
-  {{ page.fileSlug | confetti }}
+  {% formSuccessConfetti page.fileSlug %}
   <script src="/js/main.js"></script>
 </body>
 </html>

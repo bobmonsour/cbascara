@@ -3,4 +3,4 @@ setTimeout(() => {
     spread: 180,
     disableForReducedMotion: true,
   });
-}, 1000);
+}, 100);

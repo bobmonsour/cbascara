@@ -34,6 +34,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
+  // Filter to place confetti only on formsuccess page
+  eleventyConfig.addFilter("confetti", function (value) {
+    if (value === "formsuccess") {
+      return `<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script><script src="js/confetti.js"></script>`;
+    }
+  });
+
   // Shortcode for eleventy-img plugin
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 

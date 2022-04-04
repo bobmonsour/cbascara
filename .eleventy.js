@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
   // Filter to place confetti only on formsuccess page
   eleventyConfig.addFilter("confetti", function (value) {
     const confettiScripts =
-      '<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script><script src="/js/confetti.js"></script>';
+      "<script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js'></script><script src='/js/confetti.js'></script>";
     if (value === "form-success") {
       return confettiScripts;
     }

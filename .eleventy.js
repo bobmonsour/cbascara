@@ -27,10 +27,6 @@ async function imageShortcode(src, alt, sizes) {
 // --- END, eleventy-img ---
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setBrowserSyncConfig({
-    files: "./_site/css/**/*.css",
-  });
-
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
